@@ -26,7 +26,7 @@ namespace KimlikKontrolUygulaması
             int DY = dateTimePicker1.Value.Year;
             KimlikBilgileri.KPSPublicSoapClient KK = new KimlikBilgileri.KPSPublicSoapClient();
            bool Durum = KK.TCKimlikNoDogrula(TCKN,Ad,Soyad,DY);
-            if (Durum == true)
+            if (Durum == true) 
             {
                 MessageBox.Show("Girilen Kimlik Bilgileri Doğrulandı.","Geçerli Durum",MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
